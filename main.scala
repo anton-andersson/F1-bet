@@ -1,7 +1,3 @@
-//Kvar att Göra:
-//
-//förare i botten 5
-
 //För in nuvarande ställning i ordning som strängar
 val dStanding = Vector("Verstappen","Leclerc","Perez","Russel","Sainz","Hamilton","Norris","Ocon","Alonso","Bottas","Gasly","Magnussen","Vettel","Ricciardo","Schumacher","Tsunoda","Zhou","Stroll","Albon","Latifi")
 val cStanding = Vector("Red Bull","Ferrair","Mercedes","Alpine","Mclaren","Alfa Romeo","Haas","Alpha Tauri","Aston Martin","Williams")
@@ -14,6 +10,8 @@ val cp: Int = 4
 
 //Förare med flest overtakes
 val dover: String = "Magnussen"
+
+//RÖR EJ NÅGOT UNDER DENNA TEXT!!!!!:
 
 //Driver-bets på respektive person
 val dBetAnton = Vector("Verstappen","Leclerc","Hamilton","Perez","Russel","Sainz","Norris","Ricciardo","Vettel","Gasly","Alonso","Stroll","Tsunoda","Bottas","Magnussen","Ocon","Albon","Schumacher","Zhou","Latifi")
