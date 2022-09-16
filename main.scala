@@ -1,15 +1,16 @@
 //Kvar att Göra:
+//
 //Overtakes
 //Förare i topp 5
 //GP-vinster lag
 //Podium lag
 
-import scala.runtime.stdLibPatches.language.experimental.namedTypeArguments
 //För in nuvarande ställning i ordning som strängar
 val dStanding = Vector("Verstappen","Leclerc","Perez","Russel","Sainz","Hamilton","Norris","Ocon","Alonso","Bottas","Gasly","Magnussen","Vettel","Ricciardo","Schumacher","Tsunoda","Zhou","Stroll","Albon","Latifi")
 val cStanding = Vector("Red Bull","Ferrair","Mercedes","Alpine","Mclaren","Alfa Romeo","Haas","Alpha Tauri","Aston Martin","Williams")
 
 //Lag med gp vinst respektive lag på podium
+//Ferrari, Red Bull
 val cgp: Int = 2
 // Ferrari, Mercedes, Red Bull, Mclaren, 
 val cp: Int = 4
@@ -91,20 +92,21 @@ var JohanP: Int = 0
 
 @main
 def run() = {
-    //kallar på dScore, första argument(f) = dbet"namn"
-    Anton = Anton + dScore(f = dBetAnton) + cScore(f = coBetAnton)
-    Oscar = Oscar + dScore(f = dBetOscar) + cScore(f = coBetOscar)
-    Joel = Joel + dScore(f = dBetJoel) + cScore(f = coBetJoel)
-    Emanuel = Emanuel + dScore(f = dBetEmanuel) + cScore(f = coBetEmanuel)
-    Palmer = Palmer + dScore(f = dBetPalmer) + cScore(f = coBetPalmer)
-    Jesper = Jesper + dScore(f = dBetJesper) + cScore(f = coBetJesper)
-    David = David + dScore(f = dBetDavid) + cScore(f = coBetDavid)
-    Helmer = Helmer + dScore(f = dBetHelmer) + cScore(f = coBetHelmer)
-    Johan = Johan + dScore(f = dBetJohan) + cScore(f = coBetJohan)
-    Jonis = Jonis + dScore(f = dBetJonis) + cScore(f = coBetJonis)
-    Philip = Philip + dScore(f = dBetPhilip) + cScore(f = coBetPhilip)
-    Pertoft = Pertoft + dScore(f = dBetPertoft) + cScore(f = coBetPertoft)
-    JohanP = JohanP + dScore(f = dBetJohanP) + cScore(f = coBetJohanP)
+    //kallar på dScore och cScore, första argument(f) = (d/c)bet"namn"
+    Anton = Anton + dScore(f = dBetAnton) + cScore(f = coBetAnton) + cgpScore(x = cpgBetAnton) + cpScore(x = cpBetAnton)
+    Oscar = Oscar + dScore(f = dBetOscar) + cScore(f = coBetOscar) + cgpScore(x = cpgBetOscar) + cpScore(x = cpBetOscar)
+    Joel = Joel + dScore(f = dBetJoel) + cScore(f = coBetJoel) + cgpScore(x = cpgBetJoel) + cpScore(x = cpBetJoel)
+    Emanuel = Emanuel + dScore(f = dBetEmanuel) + cScore(f = coBetEmanuel) + cgpScore(x = cpgBetEmanuel) + cpScore(x = cpBetEmanuel)
+    Palmer = Palmer + dScore(f = dBetPalmer) + cScore(f = coBetPalmer) + cgpScore(x = cpgBetPalmer) + cpScore(x = cpBetPalmer)
+    Jesper = Jesper + dScore(f = dBetJesper) + cScore(f = coBetJesper) + cgpScore(x = cpgBetJesper) + cpScore(x = cpBetJesper)
+    David = David + dScore(f = dBetDavid) + cScore(f = coBetDavid) + cgpScore(x = cpgBetDavid) + cpScore(x = cpBetDavid)
+    Helmer = Helmer + dScore(f = dBetHelmer) + cScore(f = coBetHelmer) + cgpScore(x = cpgBetHelmer) + cpScore(x = cpBetHelmer)
+    Johan = Johan + dScore(f = dBetJohan) + cScore(f = coBetJohan) + cgpScore(x = cpgBetJohan) + cpScore(x = cpBetJohan)
+    Jonis = Jonis + dScore(f = dBetJonis) + cScore(f = coBetJonis) + cgpScore(x = cpgBetJonis) + cpScore(x = cpBetJonis)
+    Philip = Philip + dScore(f = dBetPhilip) + cScore(f = coBetPhilip) + cgpScore(x = cpgBetPhilip) + cpScore(x = cpBetPhilip)
+    Pertoft = Pertoft + dScore(f = dBetPertoft) + cScore(f = coBetPertoft) + cgpScore(x = cpgBetPertoft) + cpScore(x = cpBetPertoft)
+    JohanP = JohanP + dScore(f = dBetJohanP) + cScore(f = coBetJohanP) + cgpScore(x = cpgBetJohanP) + cpScore(x = cpBetJohanP)
+
     printScore("Anton", Anton)
     printScore("Oscar", Oscar)
     printScore("Joel", Joel)
@@ -118,6 +120,7 @@ def run() = {
     printScore("Philip", Philip)
     printScore("Pertoft", Pertoft)
     printScore("Johan P", JohanP)
+
     //debugging
     //println(dBetAnton)
     //println(dStanding)
@@ -196,12 +199,20 @@ def cScore(f: Vector[String]) = {
     score
 }
 
-def cgpScore() = {
-
+def cgpScore(x: Int) = {
+    var score: Int = 0
+    if x == cgp then {
+        score = score + 5
+    }
+    score
 }
 
-def cpScore() = {
-
+def cpScore(x: Int) = {
+    var score: Int = 0
+    if x == cp then {
+        score = score + 5
+    }
+    score
 }
 def printScore(name: String, x: Int) = {
     println(s"$name har $x poäng.")
