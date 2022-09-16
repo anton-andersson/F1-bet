@@ -1,7 +1,7 @@
 //Kvar att Göra:
 //
-//Overtakes
 //Förare i topp 5
+//förare i botten 5
 
 //För in nuvarande ställning i ordning som strängar
 val dStanding = Vector("Verstappen","Leclerc","Perez","Russel","Sainz","Hamilton","Norris","Ocon","Alonso","Bottas","Gasly","Magnussen","Vettel","Ricciardo","Schumacher","Tsunoda","Zhou","Stroll","Albon","Latifi")
@@ -15,7 +15,7 @@ val cp: Int = 4
 
 //Förare med flest overtakes
 val dover: String = "Magnussen"
-  
+
 //Driver-bets på respektive person
 val dBetAnton = Vector("Verstappen","Leclerc","Hamilton","Perez","Russel","Sainz","Norris","Ricciardo","Vettel","Gasly","Alonso","Stroll","Tsunoda","Bottas","Magnussen","Ocon","Albon","Schumacher","Zhou","Latifi")
 val dBetOscar = Vector("Hamilton","Leclerc","Verstappen","Russel","Perez","Norris","Sainz","Vettel","Ricciardo","Gasly","Bottas","Stroll","Alonso","Ocon","Tsunoda","Albon","Magnussen","Zhou","Schumacher","Latifi")
@@ -107,19 +107,19 @@ var JohanP: Int = 0
 @main
 def run() = {
     //kallar på dScore och cScore, första argument(f) = (d/c)bet"namn"
-    Anton = Anton + dScore(f = dBetAnton) + cScore(f = coBetAnton) + cgpScore(x = cpgBetAnton) + cpScore(x = cpBetAnton) + oveScore(x = oveAnton)
-    Oscar = Oscar + dScore(f = dBetOscar) + cScore(f = coBetOscar) + cgpScore(x = cpgBetOscar) + cpScore(x = cpBetOscar) + oveScore(x = oveOscar)
-    Joel = Joel + dScore(f = dBetJoel) + cScore(f = coBetJoel) + cgpScore(x = cpgBetJoel) + cpScore(x = cpBetJoel) + oveScore(x = oveJoel)
-    Emanuel = Emanuel + dScore(f = dBetEmanuel) + cScore(f = coBetEmanuel) + cgpScore(x = cpgBetEmanuel) + cpScore(x = cpBetEmanuel) + oveScore(x = oveEmanuel)
-    Palmer = Palmer + dScore(f = dBetPalmer) + cScore(f = coBetPalmer) + cgpScore(x = cpgBetPalmer) + cpScore(x = cpBetPalmer) + oveScore(x = ovePalmer)
-    Jesper = Jesper + dScore(f = dBetJesper) + cScore(f = coBetJesper) + cgpScore(x = cpgBetJesper) + cpScore(x = cpBetJesper) + oveScore(x = oveJesper)
-    David = David + dScore(f = dBetDavid) + cScore(f = coBetDavid) + cgpScore(x = cpgBetDavid) + cpScore(x = cpBetDavid) + oveScore(x = oveDavid)
-    Helmer = Helmer + dScore(f = dBetHelmer) + cScore(f = coBetHelmer) + cgpScore(x = cpgBetHelmer) + cpScore(x = cpBetHelmer) + oveScore(x = oveHelmer)
-    Johan = Johan + dScore(f = dBetJohan) + cScore(f = coBetJohan) + cgpScore(x = cpgBetJohan) + cpScore(x = cpBetJohan) + oveScore(x = oveJohan)
-    Jonis = Jonis + dScore(f = dBetJonis) + cScore(f = coBetJonis) + cgpScore(x = cpgBetJonis) + cpScore(x = cpBetJonis) + oveScore(x = oveJonis)
-    Philip = Philip + dScore(f = dBetPhilip) + cScore(f = coBetPhilip) + cgpScore(x = cpgBetPhilip) + cpScore(x = cpBetPhilip) + oveScore(x = ovePhilip)
-    Pertoft = Pertoft + dScore(f = dBetPertoft) + cScore(f = coBetPertoft) + cgpScore(x = cpgBetPertoft) + cpScore(x = cpBetPertoft) + oveScore(x = ovePertoft)
-    JohanP = JohanP + dScore(f = dBetJohanP) + cScore(f = coBetJohanP) + cgpScore(x = cpgBetJohanP) + cpScore(x = cpBetJohanP) + oveScore(x = oveJohanP)
+    Anton = Anton + dScore(f = dBetAnton) + cScore(f = coBetAnton) + cgpScore(x = cpgBetAnton) + cpScore(x = cpBetAnton) + oveScore(x = oveAnton) + topFive(f = dBetAnton)
+    Oscar = Oscar + dScore(f = dBetOscar) + cScore(f = coBetOscar) + cgpScore(x = cpgBetOscar) + cpScore(x = cpBetOscar) + oveScore(x = oveOscar) + topFive(f = dBetOscar)
+    Joel = Joel + dScore(f = dBetJoel) + cScore(f = coBetJoel) + cgpScore(x = cpgBetJoel) + cpScore(x = cpBetJoel) + oveScore(x = oveJoel) + topFive(f = dBetJoel)
+    Emanuel = Emanuel + dScore(f = dBetEmanuel) + cScore(f = coBetEmanuel) + cgpScore(x = cpgBetEmanuel) + cpScore(x = cpBetEmanuel) + oveScore(x = oveEmanuel) + topFive(f = dBetEmanuel)
+    Palmer = Palmer + dScore(f = dBetPalmer) + cScore(f = coBetPalmer) + cgpScore(x = cpgBetPalmer) + cpScore(x = cpBetPalmer) + oveScore(x = ovePalmer) + topFive(f = dBetPalmer)
+    Jesper = Jesper + dScore(f = dBetJesper) + cScore(f = coBetJesper) + cgpScore(x = cpgBetJesper) + cpScore(x = cpBetJesper) + oveScore(x = oveJesper) + topFive(f = dBetJesper)
+    David = David + dScore(f = dBetDavid) + cScore(f = coBetDavid) + cgpScore(x = cpgBetDavid) + cpScore(x = cpBetDavid) + oveScore(x = oveDavid) + topFive(f = dBetDavid)
+    Helmer = Helmer + dScore(f = dBetHelmer) + cScore(f = coBetHelmer) + cgpScore(x = cpgBetHelmer) + cpScore(x = cpBetHelmer) + oveScore(x = oveHelmer) + topFive(f = dBetHelmer)
+    Johan = Johan + dScore(f = dBetJohan) + cScore(f = coBetJohan) + cgpScore(x = cpgBetJohan) + cpScore(x = cpBetJohan) + oveScore(x = oveJohan) + topFive(f = dBetJohan)
+    Jonis = Jonis + dScore(f = dBetJonis) + cScore(f = coBetJonis) + cgpScore(x = cpgBetJonis) + cpScore(x = cpBetJonis) + oveScore(x = oveJonis) + topFive(f = dBetJonis)
+    Philip = Philip + dScore(f = dBetPhilip) + cScore(f = coBetPhilip) + cgpScore(x = cpgBetPhilip) + cpScore(x = cpBetPhilip) + oveScore(x = ovePhilip) + topFive(f = dBetPhilip)
+    Pertoft = Pertoft + dScore(f = dBetPertoft) + cScore(f = coBetPertoft) + cgpScore(x = cpgBetPertoft) + cpScore(x = cpBetPertoft) + oveScore(x = ovePertoft) + topFive(f = dBetPertoft)
+    JohanP = JohanP + dScore(f = dBetJohanP) + cScore(f = coBetJohanP) + cgpScore(x = cpgBetJohanP) + cpScore(x = cpBetJohanP) + oveScore(x = oveJohanP) + topFive(f = dBetJohanP)
 
     printScore("Anton", Anton)
     printScore("Oscar", Oscar)
@@ -139,7 +139,7 @@ def run() = {
     //println(dBetAnton)
     //println(dStanding)
 }
-//Poiunts från drivers championship
+//Points från drivers championship
 def dScore(f: Vector[String]): Int = {
     var score: Int = 0
     def dwinner(f: Vector[String]) = {
@@ -236,6 +236,28 @@ def oveScore(x: String) = {
         score = score + 5
     }
     score
+}
+
+def topFive(f: Vector[String]): Int = {
+    var score = 0
+    for x <- 0 to 4 do {
+        if f(0) == dStanding(x) then {
+            score = score + 5
+        }
+        else if f(1) == dStanding(x) then {
+            score = score + 5
+        }
+        else if f(2) == dStanding(x) then {
+            score = score + 5
+        }
+        else if f(3) == dStanding(x) then {
+            score = score + 5
+        }
+        else if f(4) == dStanding(x) then {
+            score = score + 5
+        }
+    }
+    score 
 }
 
 def printScore(name: String, x: Int) = {
