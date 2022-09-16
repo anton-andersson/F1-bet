@@ -31,7 +31,21 @@ val dBetJonis = Vector("Verstappen","Hamilton","Russel","Perez","Leclerc","Sainz
 val dBetPhilip = Vector("Verstappen","Hamilton","Leclerc","Sainz","Perez","Russel","Norris","Gasly","Ricciardo","Tsunoda","Alonso","Ocon","Magnussen","Vettel","Bottas","Stroll","Albon","Latifi","Schumacher","Zhou")
 val dBetPertoft = Vector("Verstappen","Hamilton","Perez","Russel","Norris","Leclerc","Sainz","Gasly","Ricciardo","Stroll","Vettel","Ocon","Alonso","Bottas","Schumacher","Albon","Tsunoda","Magnussen","Zhou","Latifi")
 val dBetJohanP = Vector("Verstappen","Hamilton","Leclerc","Sainz","Russel","Perez","Norris","Ricciardo","Gasly","Ocon","Vettel","Alonso","Stroll","Schumacher","Tsunoda","Albon","Magnussen","Latifi","Bottas","Zhou")
-    
+
+val coBetAnton = Vector("Red Bull","Ferrari","Mercedes","McLaren","Aston Martin","Alpha Tauri","Alpine","Haas","Alfa Romeo","Williams")
+val coBetOscar = Vector("Mercedes","Red Bull","Ferrari","McLaren","Aston Martin","Alpha Tauri","Alpine","Alfa Romeo","Williams","Haas")
+val coBetJoel = Vector("Red Bull","Mercedes","Ferrari","McLaren","Alpha Tauri","Alpine","Aston Martin","Haas","Alfa Romeo","Williams")
+val coBetEmanuel = Vector("Red Bull","Ferrari","Mercedes","McLaren","Alpha Tauri","Aston Martin","Haas","Alpine","Alfa Romeo","Williams")
+val coBetPalmer = Vector("Mercedes","Red Bull","Ferrari","McLaren","Alpha Tauri","Alpine","Aston Martin","Haas","Alfa Romeo","Williams")
+val coBetJesper = Vector("Red Bull","Mercedes","Ferrari","McLaren","Alpha Tauri","Aston Martin","Alpine","Alfa Romeo","Williams","Haas")
+val coBetDavid = Vector("Mercedes","Ferrari","Red Bull","McLaren","Alpha Tauri","Aston Martin","Alpine","Haas","Williams","Alfa Romeo")
+val coBetHelmer = Vector("Mercedes","Red Bull","Ferrari","McLaren","Alpine","Aston Martin","Alpha Tauri","Williams","Alfa Romeo","Haas")
+val coBetJohan = Vector("Mercedes","Red Bull","Ferrari","McLaren","Alpha Tauri","Alpine","Alfa Romeo","Williams","Aston Martin","Haas")
+val coBetJonis = Vector("Mercedes","Red Bull","Ferrari","McLaren","Alpine","Aston Martin","Haas","Williams","Alpha Tauri","Alfa Romeo")
+val coBetPhilip = Vector("Red Bull","Ferrari","Mercedes","McLaren","Alpha Tauri","Alpine","Aston Martin","Haas","Williams","Alfa Romeo")
+val coBetPertoft = Vector("Red Bull","Mercedes","McLaren","Ferrari","Alpha Tauri","Aston Martin","Alpine","Haas","Alfa Romeo","Williams")
+val coBetJohanP = Vector("Mercedes","Red Bull","Ferrari","McLaren","Alpine","Aston Martin","Williams","Alpha Tauri","Alfa Romeo","Haas")
+
 //GP och podiumbets på respektive person
 val cpgBetAnton: Int = 5
 val cpBetAnton: Int = 7
@@ -78,19 +92,19 @@ var JohanP: Int = 0
 @main
 def run() = {
     //kallar på dScore, första argument(f) = dbet"namn"
-    Anton = Anton + dScore(f = dBetAnton)
-    Oscar = Oscar + dScore(f = dBetOscar)
-    Joel = Joel + dScore(f = dBetJoel)
-    Emanuel = Emanuel + dScore(f = dBetEmanuel)
-    Palmer = Palmer + dScore(f = dBetPalmer)
-    Jesper = Jesper + dScore(f = dBetJesper)
-    David = David + dScore(f = dBetDavid)
-    Helmer = Helmer + dScore(f = dBetHelmer)
-    Johan = Johan + dScore(f = dBetJohan)
-    Jonis = Jonis + dScore(f = dBetJonis)
-    Philip = Philip + dScore(f = dBetPhilip)
-    Pertoft = Pertoft + dScore(f = dBetPertoft)
-    JohanP = JohanP + dScore(f = dBetJohanP)
+    Anton = Anton + dScore(f = dBetAnton) + cScore(f = coBetAnton)
+    Oscar = Oscar + dScore(f = dBetOscar) + cScore(f = coBetOscar)
+    Joel = Joel + dScore(f = dBetJoel) + cScore(f = coBetJoel)
+    Emanuel = Emanuel + dScore(f = dBetEmanuel) + cScore(f = coBetEmanuel)
+    Palmer = Palmer + dScore(f = dBetPalmer) + cScore(f = coBetPalmer)
+    Jesper = Jesper + dScore(f = dBetJesper) + cScore(f = coBetJesper)
+    David = David + dScore(f = dBetDavid) + cScore(f = coBetDavid)
+    Helmer = Helmer + dScore(f = dBetHelmer) + cScore(f = coBetHelmer)
+    Johan = Johan + dScore(f = dBetJohan) + cScore(f = coBetJohan)
+    Jonis = Jonis + dScore(f = dBetJonis) + cScore(f = coBetJonis)
+    Philip = Philip + dScore(f = dBetPhilip) + cScore(f = coBetPhilip)
+    Pertoft = Pertoft + dScore(f = dBetPertoft) + cScore(f = coBetPertoft)
+    JohanP = JohanP + dScore(f = dBetJohanP) + cScore(f = coBetJohanP)
     printScore("Anton", Anton)
     printScore("Oscar", Oscar)
     printScore("Joel", Joel)
@@ -145,8 +159,41 @@ def dScore(f: Vector[String]): Int = {
     dwinner(f: Vector[String])
     score
 }
-def cScore() = {
-
+def cScore(f: Vector[String]) = {
+    var score: Int = 0
+    def cwinner(f: Vector[String]) = {
+        if f(0) == cStanding(0) then {
+            score = score + 10
+        }
+        else {
+            0
+        }
+    }
+    def exactMatch(f: Vector[String], x: Int, z: Int = 0, p: Int = 5) = {
+        if f(x) == cStanding(x + z) then {
+            score = score + p
+        }
+        else {
+            0
+        }
+    }
+    for x <- 1 to 9 do {
+        exactMatch(f: Vector[String], x, 0, 5)
+    }
+    for x <- 1 to 8 do {
+        exactMatch(f: Vector[String], x, 1, 3)
+        exactMatch(f: Vector[String], x, -1, 3)
+    }
+    for x <- 2 to 7 do {
+        exactMatch(f: Vector[String], x, 2, 2)
+        exactMatch(f: Vector[String], x, -2, 2)
+    }
+    for x <- 3 to 6 do {
+        exactMatch(f: Vector[String], x, 3, 1)
+        exactMatch(f: Vector[String], x, -3, 1)
+    }
+    cwinner(f: Vector[String])
+    score
 }
 
 def cgpScore() = {
