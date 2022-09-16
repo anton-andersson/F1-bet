@@ -1,6 +1,9 @@
 //Kvar att Göra:
 //Overtakes
-//
+//Förare i topp 5
+//GP-vinster lag
+//Podium lag
+
 import scala.runtime.stdLibPatches.language.experimental.namedTypeArguments
 //För in nuvarande ställning i ordning som strängar
 val dStanding = Vector("Verstappen","Leclerc","Perez","Russel","Sainz","Hamilton","Norris","Ocon","Alonso","Bottas","Gasly","Magnussen","Vettel","Ricciardo","Schumacher","Tsunoda","Zhou","Stroll","Albon","Latifi")
@@ -11,6 +14,8 @@ val cgp: Int = 2
 // Ferrari, Mercedes, Red Bull, Mclaren, 
 val cp: Int = 4
 
+//Förare med flest overtakes
+val dover: String = "Vettel"
   
 //Driver-bets på respektive person
 val dBetAnton = Vector("Verstappen","Leclerc","Hamilton","Perez","Russel","Sainz","Norris","Ricciardo","Vettel","Gasly","Alonso","Stroll","Tsunoda","Bottas","Magnussen","Ocon","Albon","Schumacher","Zhou","Latifi")
@@ -99,18 +104,46 @@ def run() = {
     printScore("Philip", Philip)
     printScore("Pertoft", Pertoft)
     printScore("Johan P", JohanP)
+    //debugging
+    //println(dBetAnton)
+    //println(dStanding)
 }
-//Behöver tittas närmare på
+//Poiunts från drivers championship
 def dScore(f: Vector[String]): Int = {
-    def dwinner(f: Vector[String]): Int = {
+    var score: Int = 0
+    def dwinner(f: Vector[String]) = {
         if f(0) == dStanding(0) then {
-            10
+            score = score + 10
         }
         else {
             0
         }
     }
-    dwinner(f) 
+    def exactMatch(f: Vector[String], x: Int, z: Int = 0, p: Int = 5) = {
+        if f(x) == dStanding(x + z) then {
+            score = score + p
+        }
+        else {
+            0
+        }
+    }
+    for x <- 1 to 19 do {
+        exactMatch(f: Vector[String], x, 0, 5)
+    }
+    for x <- 1 to 18 do {
+        exactMatch(f: Vector[String], x, 1, 3)
+        exactMatch(f: Vector[String], x, -1, 3)
+    }
+    for x <- 2 to 17 do {
+        exactMatch(f: Vector[String], x, 2, 2)
+        exactMatch(f: Vector[String], x, -2, 2)
+    }
+    for x <- 3 to 16 do {
+        exactMatch(f: Vector[String], x, 3, 1)
+        exactMatch(f: Vector[String], x, -3, 1)
+    }
+    dwinner(f: Vector[String])
+    score
 }
 def cScore() = {
 
