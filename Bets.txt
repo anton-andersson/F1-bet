@@ -1,0 +1,892 @@
+Anton
+
+Driver
+Verstappen
+Leclerc
+Perez
+Russel
+Sainz
+Norris
+Hamilton
+Alonso
+Piastri
+De Vries
+Gasly
+Bottas
+Magnussen
+Tsunoda
+Stroll
+Ocon
+Albon
+Zhou
+Hulkenberg
+Sargeant
+DriverEND
+
+Team
+RED BULL
+FERRARI
+MERCEDES
+MCLAREN
+ASTON MARTIN
+ALPHA TAURI
+ALPINE
+HAAS
+ALFA ROMEO
+WILLIAMS
+TeamEND
+
+GP
+3
+GPEND
+Podium
+5
+PodiumEND
+
+BREAK
+Ludvig
+
+Driver
+Verstappen
+Leclerc
+Russel
+Perez
+Sainz
+Hamilton
+Ocon
+Norris
+Alonso
+Bottas
+De Vries
+Magnussen
+Stroll
+Piastri
+Tsunoda
+Zhou
+Gasly
+Albon
+Hulkenberg
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Alpine
+McLaren
+Aston Martin
+Alfa Romeo
+Alpha Tauri
+Haas
+Williams
+TeamEND
+
+GP
+2
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+Linda
+
+Driver
+Verstappen
+Leclerc
+Perez
+Russel
+Sainz
+Hamilton
+Alonso
+Bottas
+De Vries
+Stroll
+Norris
+Piastri
+Tsunoda
+Zhou
+Gasly
+Magnussen
+Albon
+Ocon
+Hulkenberg
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alfa Romeo
+Alpha Tauri
+McLaren
+Alpine
+Haas
+Williams
+TeamEND
+
+GP
+4
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Theo
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Sainz
+Alonso
+Perez
+Russel
+Norris
+Albon
+De Vries
+Ocon
+Magnussen
+Gasly
+Hulkenberg
+Bottas
+Piastri
+Zhou
+Tsunoda
+Stroll
+Sargeant
+DriverEND
+
+Team
+Ferrari
+Red Bull
+Mercedes
+McLaren
+Williams
+Alfa Romeo
+Alpha Tauri
+Alpine
+Aston Martin
+Haas
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+Joel
+
+Driver
+Verstappen
+Leclerc
+Perez
+Hamilton
+Russel
+Sainz
+Alonso
+Norris
+Stroll
+Gasly
+Ocon
+Piastri
+Bottas
+De Vries
+Magnussen
+Zhou
+Tsunoda
+Hulkenberg
+Albon
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Mercedes
+Ferrari
+Aston Martin
+Alpine
+McLaren
+Alfa Romeo
+Alpha Tauri
+Haas
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Pertoft
+
+Driver
+Verstappen
+Perez
+Russel
+Hamilton
+Leclerc
+Sainz
+Norris
+Gasly
+Ocon
+Alonso
+Piastri
+Bottas
+Tsunoda
+Magnussen
+Stroll
+Zhou
+Hulkenberg
+De Vries
+Albon
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Mercedes
+Ferrari
+Alpine
+McLaren
+Alfa Romeo
+Aston Martin
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+4
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Alice
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Perez
+Sainz
+Russel
+Alonso
+Norris
+Ocon
+Bottas
+Gasly
+Tsunoda
+Magnussen
+Stroll
+Hulkenberg
+Piastri
+Zhou
+Albon
+De Vries
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Alpine
+Alfa Romeo
+Aston Martin
+McLaren
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Jesper
+
+Driver
+Verstappen
+Leclerc
+Russel
+Perez
+Hamilton
+Sainz
+Norris
+Gasly
+Ocon
+Bottas
+Alonso
+Magnussen
+Piastri
+Hulkenberg
+Zhou
+De Vries
+Stroll
+Tsunoda
+Albon
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Mercedes
+Ferrari
+Alpine
+McLaren
+Alfa Romeo
+Haas
+Aston Martin
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+4
+PodiumEND
+
+BREAK
+Ida
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Perez
+Russel
+Sainz
+Norris
+Alonso
+Bottas
+Piastri
+Ocon
+Magnussen
+Gasly
+Stroll
+Albon
+Tsunoda
+De Vries
+Hulkenberg
+Zhou
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Mercedes
+Ferrari
+McLaren
+Alfa Romeo
+Haas
+Aston Martin
+Alpine
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+4
+PodiumEND
+
+BREAK
+Tim
+
+Driver
+Verstappen
+Leclerc
+Perez
+Sainz
+Russel
+Hamilton
+Alonso
+Norris
+Gasly
+Stroll
+Piastri
+Ocon
+Bottas
+Magnussen
+Zhou
+Hulkenberg
+Albon
+De Vries
+Tsunoda
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+McLaren
+Alfa Romeo
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+4
+PodiumEND
+
+BREAK
+Palmér
+
+Driver
+Verstappen
+Hamilton
+Russel
+Leclerc
+Perez
+Sainz
+Alonso
+Gasly
+Norris
+Ocon
+Piastri
+De Vries
+Magnussen
+Hulkenberg
+Stroll
+Albon
+Tsunoda
+Bottas
+Zhou
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Mercedes
+Ferrari
+Aston Martin
+Alpine
+Alfa Romeo
+McLaren
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+4
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+Johan
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Perez
+Sainz
+Russel
+Alonso
+Stroll
+Ocon
+Gasly
+Bottas
+Norris
+Zhou
+Albon
+Magnussen
+Tsunoda
+Piastri
+De Vries
+Hulkenberg
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+Alfa Romeo
+McLaren
+Haas
+Williams
+Alpha Tauri
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+4
+PodiumEND
+
+BREAK
+Victor
+
+Driver
+Verstappen
+Perez
+Leclerc
+Hamilton
+Sainz
+Russel
+Alonso
+Norris
+Ocon
+Bottas
+Gasly
+Zhou
+Stroll
+Hulkenberg
+Piastri
+Magnussen
+Tsunoda
+Albon
+De Vries
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+McLaren
+Alfa Romeo
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+Davids ex
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Perez
+Russel
+Sainz
+Norris
+Ocon
+Alonso
+Piastri
+Gasly
+Bottas
+Magnussen
+Hulkenberg
+Stroll
+Zhou
+Tsunoda
+Albon
+De Vries
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+McLaren
+Alpine
+Aston Martin
+Alfa Romeo
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+5
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Philip 
+
+Driver
+Verstappen
+Perez
+Leclerc
+Sainz
+Russel
+Hamilton
+Alonso
+Ocon
+Gasly
+Stroll
+Norris
+Bottas
+Magnussen
+Zhou
+Hulkenberg
+Piastri
+Tsunoda
+Albon
+De Vries
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+McLaren
+Alfa Romeo
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+4
+PodiumEND
+
+BREAK
+Konrad
+
+Driver
+Verstappen
+Leclerc
+Perez
+Russel
+Sainz
+Hamilton
+De Vries
+Alonso
+Norris
+Bottas
+Gasly
+Tsunoda
+Stroll
+Piastri
+Zhou
+Magnussen
+Ocon
+Albon
+Hulkenberg
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Alpha Tauri
+Aston Martin
+McLaren
+Alfa Romeo
+Alpine
+Haas
+Williams
+TeamEND
+
+GP
+2
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+Daniel
+
+Driver
+Verstappen
+Leclerc
+Hamilton
+Sainz
+Perez
+Russel
+Gasly
+Alonso
+Norris
+Ocon
+Bottas
+Stroll
+Magnussen
+Tsunoda
+Piastri
+Hulkenberg
+Albon
+Zhou
+De Vries
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Alpine
+Aston Martin
+McLaren
+Alfa Romeo
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+3
+GPEND
+
+Podium
+5
+PodiumEND
+
+BREAK
+David
+
+Driver
+Verstappen
+Sainz
+Perez
+Leclerc
+Hamilton
+Russel
+Alonso
+Gasly
+Stroll
+Ocon
+Bottas
+Norris
+Zhou
+Magnussen
+Hulkenberg
+Piastri
+De Vries
+Tsunoda
+Albon
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+Alfa Romeo
+McLaren
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+4
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK
+Emanuel
+
+Driver
+Verstappen
+Perez
+Leclerc
+Sainz
+Russel
+Alonso
+Hamilton
+Gasly
+Bottas
+Stroll
+Ocon
+Norris
+Magnussen
+Zhou
+Hulkenberg
+Piastri
+De Vries
+Tsunoda
+Albon
+Sargeant
+DriverEND
+
+Team
+Red Bull
+Ferrari
+Mercedes
+Aston Martin
+Alpine
+Alfa Romeo
+McLaren
+Haas
+Alpha Tauri
+Williams
+TeamEND
+
+GP
+4
+GPEND
+
+Podium
+6
+PodiumEND
+
+BREAK

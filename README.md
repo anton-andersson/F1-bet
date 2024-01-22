@@ -10,5 +10,4 @@ Place +-2	2		      Place +-2	    2
 Place +-3	1		      Place +-3	    1
 				
 Inom top 5	5/fö		GP-vinster	5
-Inom botten 5	5/fö		Podium	5
-Overtakes	5			
+Inom botten 5	5/fö		Podium	5			
